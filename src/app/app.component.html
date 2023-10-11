@@ -1,0 +1,9 @@
+<ng-container *ngFor="let image of imageList">
+  <!-- <img [src]="image.url"  width="4000" height="3000"> -->
+
+  <img *ngIf="image.id === 1" priority=""  ngSrcset="200w, 400w, 600w, 800w, 1000w, 1200w, 1600w, 2000w, 3000w" width="4000" height="3000" [ngSrc]="image.url" >
+
+  <img *ngIf="image.id !== 1" loading="lazy"  ngSrcset="200w, 400w, 600w, 800w, 1000w, 1200w, 1600w, 2000w, 3000w" width="4000" height="3000" [ngSrc]="image.url">
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut pulvinar nunc, nec vestibulum eros. Quisque condimentum orci nisl, quis facilisis magna ultricies ac. Phasellus iaculis enim aliquam ante dictum vehicula. Phasellus felis tellus, viverra sit amet velit eu, vulputate tempus enim. Ut turpis augue, congue sollicitudin diam vel, suscipit lobortis libero. Etiam nec nulla ut lectus maximus tempor sit amet at lorem.</p>
+</ng-container>
